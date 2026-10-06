@@ -1,0 +1,43 @@
+
+# ==========================================
+# RAGX - Retrieval, Reranking & Evaluation
+# ==========================================
+
+# API and configuration
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+pydantic-settings>=2.5,<3.0
+python-dotenv>=1.0,<2.0
+
+# LLM inference - Groq
+groq>=0.11,<2.0
+
+# Embeddings and reranking
+sentence-transformers>=3.0,<6.0
+torch>=2.2
+transformers>=4.45,<5.0
+
+# Vector search and keyword retrieval
+faiss-cpu>=1.8
+rank-bm25>=0.2.2
+
+# Document ingestion
+pypdf>=5.0
+python-docx>=1.1
+
+# Evaluation and data processing
+numpy>=1.26,<2.0
+pandas>=2.2
+scikit-learn>=1.5
+
+# Experiment configurations
+PyYAML>=6.0
+
+# Dashboard and visualization
+streamlit>=1.39
+plotly>=5.24
+
+# Testing and code quality
+pytest>=8.3
+httpx>=0.27
+ruff>=0.7

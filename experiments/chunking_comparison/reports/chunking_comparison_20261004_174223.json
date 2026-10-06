@@ -1,0 +1,3498 @@
+{
+  "project": "RAGX",
+  "experiment_timestamp": "2026-10-04T17:42:23.715392+05:30",
+  "strategies": {
+    "baseline": {
+      "project": "RAGX",
+      "strategy": "baseline",
+      "experiment_timestamp": "2026-10-04T17:42:23.715392+05:30",
+      "dataset_path": "C:\\00_Main_ALL_CODE\\ragx\\experiments\\chunking_comparison\\baseline\\ground_truth.jsonl",
+      "vector_store_path": "C:\\00_Main_ALL_CODE\\ragx\\experiments\\chunking_comparison\\indexes\\baseline\\vector_store",
+      "bm25_index_path": "C:\\00_Main_ALL_CODE\\ragx\\experiments\\chunking_comparison\\indexes\\baseline\\bm25_index",
+      "index_size": 54,
+      "queries_evaluated": 12,
+      "candidate_k": 20,
+      "reranker_enabled": true,
+      "runs": [
+        {
+          "k": 1,
+          "queries_evaluated": 12,
+          "candidate_k": 20,
+          "average_metrics": {
+            "dense": {
+              "precision@1": 0.8333333333333334,
+              "recall@1": 0.5347222222222222,
+              "mrr": 0.8869047619047619,
+              "map": 0.6634920634920635,
+              "ndcg@1": 0.8333333333333334
+            },
+            "keyword": {
+              "precision@1": 0.75,
+              "recall@1": 0.46527777777777773,
+              "mrr": 0.8541666666666666,
+              "map": 0.6753472222222222,
+              "ndcg@1": 0.75
+            },
+            "fused": {
+              "precision@1": 0.9166666666666666,
+              "recall@1": 0.576388888888889,
+              "mrr": 0.9444444444444445,
+              "map": 0.7221420702119231,
+              "ndcg@1": 0.9166666666666666
+            },
+            "reranked": {
+              "precision@1": 0.9166666666666666,
+              "recall@1": 0.5347222222222222,
+              "mrr": 0.9583333333333334,
+              "map": 0.7245629370629371,
+              "ndcg@1": 0.9166666666666666
+            }
+          },
+          "per_query": [
+            {
+              "query": "What is the purpose of reranking in RAG?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.5,
+                  "map": 0.375,
+                  "ndcg@1": 0.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6666666666666666,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "How does hybrid search combine dense and sparse retrieval?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.8095238095238094,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.7777777777777778,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.8333333333333334,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.7435897435897436,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "What is the purpose of splitting documents into chunks?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@1": 0.0
+                }
+              }
+            },
+            {
+              "query": "What is the difference between training and inference?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why split data into training, validation, and test sets?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.7,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5909090909090909,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "What is the difference between precision and recall?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@1": 0.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why can deep learning perform well on images and text?",
+              "stages": {
+                "dense": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.14285714285714285,
+                  "map": 0.14285714285714285,
+                  "ndcg@1": 0.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5666666666666667,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.3333333333333333,
+                  "map": 0.25757575757575757,
+                  "ndcg@1": 0.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5769230769230769,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "What does an embedding represent?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "Does RAG eliminate hallucinations?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.25,
+                  "mrr": 1.0,
+                  "map": 0.65,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.25,
+                  "mrr": 1.0,
+                  "map": 0.8166666666666667,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.25,
+                  "mrr": 1.0,
+                  "map": 0.6604166666666667,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.25,
+                  "mrr": 1.0,
+                  "map": 0.8166666666666667,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "When should RAG be chosen over fine-tuning?",
+              "stages": {
+                "dense": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.5,
+                  "map": 0.25,
+                  "ndcg@1": 0.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5588235294117647,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.55,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "How would you debug a RAG system with incorrect answers?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5625,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "What is the difference between ML, DL, and RAG?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.4666666666666666,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.25,
+                  "map": 0.3055555555555555,
+                  "ndcg@1": 0.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.5555555555555555,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.75,
+                  "ndcg@1": 1.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "k": 3,
+          "queries_evaluated": 12,
+          "candidate_k": 20,
+          "average_metrics": {
+            "dense": {
+              "precision@3": 0.3611111111111111,
+              "recall@3": 0.625,
+              "mrr": 0.8869047619047619,
+              "map": 0.6634920634920635,
+              "ndcg@3": 0.6855245321275764
+            },
+            "keyword": {
+              "precision@3": 0.38888888888888884,
+              "recall@3": 0.6597222222222222,
+              "mrr": 0.8541666666666666,
+              "map": 0.6753472222222222,
+              "ndcg@3": 0.6863109974047045
+            },
+            "fused": {
+              "precision@3": 0.38888888888888884,
+              "recall@3": 0.6666666666666666,
+              "mrr": 0.9444444444444445,
+              "map": 0.7221420702119231,
+              "ndcg@3": 0.7299301972870468
+            },
+            "reranked": {
+              "precision@3": 0.4166666666666667,
+              "recall@3": 0.6944444444444445,
+              "mrr": 0.9583333333333334,
+              "map": 0.7245629370629371,
+              "ndcg@3": 0.7493956356970513
+            }
+          },
+          "per_query": [
+            {
+              "query": "What is the purpose of reranking in RAG?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 0.5,
+                  "map": 0.375,
+                  "ndcg@3": 0.38685280723454163
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6666666666666666,
+                  "ndcg@3": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "How does hybrid search combine dense and sparse retrieval?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.8095238095238094,
+                  "ndcg@3": 0.7653606369886217
+                },
+                "keyword": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.7777777777777778,
+                  "ndcg@3": 0.7653606369886217
+                },
+                "fused": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.8333333333333334,
+                  "ndcg@3": 0.7653606369886217
+                },
+                "reranked": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.7435897435897436,
+                  "ndcg@3": 0.7653606369886217
+                }
+              }
+            },
+            {
+              "query": "What is the purpose of splitting documents into chunks?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@3": 0.6309297535714575
+                }
+              }
+            },
+            {
+              "query": "What is the difference between training and inference?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why split data into training, validation, and test sets?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.7,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5909090909090909,
+                  "ndcg@3": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What is the difference between precision and recall?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@3": 0.6309297535714575
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why can deep learning perform well on images and text?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.0,
+                  "recall@3": 0.0,
+                  "mrr": 0.14285714285714285,
+                  "map": 0.14285714285714285,
+                  "ndcg@3": 0.0
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5666666666666667,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 0.3333333333333333,
+                  "map": 0.25757575757575757,
+                  "ndcg@3": 0.3065735963827292
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5769230769230769,
+                  "ndcg@3": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What does an embedding represent?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                }
+              }
+            },
+            {
+              "query": "Does RAG eliminate hallucinations?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.65,
+                  "ndcg@3": 0.7653606369886217
+                },
+                "keyword": {
+                  "precision@3": 1.0,
+                  "recall@3": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.8166666666666667,
+                  "ndcg@3": 1.0
+                },
+                "fused": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6604166666666667,
+                  "ndcg@3": 0.7653606369886217
+                },
+                "reranked": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.8166666666666667,
+                  "ndcg@3": 0.7653606369886217
+                }
+              }
+            },
+            {
+              "query": "When should RAG be chosen over fine-tuning?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 0.5,
+                  "map": 0.25,
+                  "ndcg@3": 0.38685280723454163
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5588235294117647,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.55,
+                  "ndcg@3": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "How would you debug a RAG system with incorrect answers?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5625,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@3": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What is the difference between ML, DL, and RAG?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.4666666666666666,
+                  "ndcg@3": 0.46927872602275644
+                },
+                "keyword": {
+                  "precision@3": 0.0,
+                  "recall@3": 0.0,
+                  "mrr": 0.25,
+                  "map": 0.3055555555555555,
+                  "ndcg@3": 0.0
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.5555555555555555,
+                  "ndcg@3": 0.46927872602275644
+                },
+                "reranked": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.75,
+                  "ndcg@3": 0.7653606369886217
+                }
+              }
+            }
+          ]
+        },
+        {
+          "k": 5,
+          "queries_evaluated": 12,
+          "candidate_k": 20,
+          "average_metrics": {
+            "dense": {
+              "precision@5": 0.23333333333333336,
+              "recall@5": 0.6458333333333334,
+              "mrr": 0.8869047619047619,
+              "map": 0.6634920634920635,
+              "ndcg@5": 0.6873863171252443
+            },
+            "keyword": {
+              "precision@5": 0.25,
+              "recall@5": 0.6875,
+              "mrr": 0.8541666666666666,
+              "map": 0.6753472222222222,
+              "ndcg@5": 0.6891426482571571
+            },
+            "fused": {
+              "precision@5": 0.25,
+              "recall@5": 0.7083333333333334,
+              "mrr": 0.9444444444444445,
+              "map": 0.7221420702119231,
+              "ndcg@5": 0.7389734901631724
+            },
+            "reranked": {
+              "precision@5": 0.26666666666666666,
+              "recall@5": 0.7152777777777778,
+              "mrr": 0.9583333333333334,
+              "map": 0.7245629370629371,
+              "ndcg@5": 0.7512574206947192
+            }
+          },
+          "per_query": [
+            {
+              "query": "What is the purpose of reranking in RAG?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 0.5,
+                  "map": 0.375,
+                  "ndcg@5": 0.38685280723454163
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6666666666666666,
+                  "ndcg@5": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "How does hybrid search combine dense and sparse retrieval?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.4,
+                  "recall@5": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.8095238095238094,
+                  "ndcg@5": 0.7653606369886217
+                },
+                "keyword": {
+                  "precision@5": 0.4,
+                  "recall@5": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.7777777777777778,
+                  "ndcg@5": 0.7653606369886217
+                },
+                "fused": {
+                  "precision@5": 0.4,
+                  "recall@5": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.8333333333333334,
+                  "ndcg@5": 0.7653606369886217
+                },
+                "reranked": {
+                  "precision@5": 0.4,
+                  "recall@5": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.7435897435897436,
+                  "ndcg@5": 0.7653606369886217
+                }
+              }
+            },
+            {
+              "query": "What is the purpose of splitting documents into chunks?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@5": 0.6309297535714575
+                }
+              }
+            },
+            {
+              "query": "What is the difference between training and inference?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why split data into training, validation, and test sets?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@5": 0.4,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.7,
+                  "ndcg@5": 0.8503449055347546
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5909090909090909,
+                  "ndcg@5": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What is the difference between precision and recall?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@5": 0.6309297535714575
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why can deep learning perform well on images and text?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.0,
+                  "recall@5": 0.0,
+                  "mrr": 0.14285714285714285,
+                  "map": 0.14285714285714285,
+                  "ndcg@5": 0.0
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5666666666666667,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 0.3333333333333333,
+                  "map": 0.25757575757575757,
+                  "ndcg@5": 0.3065735963827292
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5769230769230769,
+                  "ndcg@5": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What does an embedding represent?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                }
+              }
+            },
+            {
+              "query": "Does RAG eliminate hallucinations?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.6,
+                  "recall@5": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.65,
+                  "ndcg@5": 0.787702056960637
+                },
+                "keyword": {
+                  "precision@5": 0.6,
+                  "recall@5": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.8166666666666667,
+                  "ndcg@5": 0.8318724637288826
+                },
+                "fused": {
+                  "precision@5": 0.4,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6604166666666667,
+                  "ndcg@5": 0.6366824387328317
+                },
+                "reranked": {
+                  "precision@5": 0.6,
+                  "recall@5": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.8166666666666667,
+                  "ndcg@5": 0.787702056960637
+                }
+              }
+            },
+            {
+              "query": "When should RAG be chosen over fine-tuning?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 0.5,
+                  "map": 0.25,
+                  "ndcg@5": 0.38685280723454163
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5588235294117647,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.55,
+                  "ndcg@5": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "How would you debug a RAG system with incorrect answers?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5625,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@5": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What is the difference between ML, DL, and RAG?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.4666666666666666,
+                  "ndcg@5": 0.46927872602275644
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.3333333333333333,
+                  "mrr": 0.25,
+                  "map": 0.3055555555555555,
+                  "ndcg@5": 0.20210734650054757
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.5555555555555555,
+                  "ndcg@5": 0.46927872602275644
+                },
+                "reranked": {
+                  "precision@5": 0.4,
+                  "recall@5": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.75,
+                  "ndcg@5": 0.7653606369886217
+                }
+              }
+            }
+          ]
+        },
+        {
+          "k": 10,
+          "queries_evaluated": 12,
+          "candidate_k": 20,
+          "average_metrics": {
+            "dense": {
+              "precision@10": 0.14166666666666666,
+              "recall@10": 0.7430555555555555,
+              "mrr": 0.8869047619047619,
+              "map": 0.6634920634920635,
+              "ndcg@10": 0.7297904500484947
+            },
+            "keyword": {
+              "precision@10": 0.17500000000000002,
+              "recall@10": 0.8958333333333334,
+              "mrr": 0.8541666666666666,
+              "map": 0.6753472222222222,
+              "ndcg@10": 0.772275929746426
+            },
+            "fused": {
+              "precision@10": 0.16666666666666666,
+              "recall@10": 0.8541666666666666,
+              "mrr": 0.9444444444444445,
+              "map": 0.7221420702119231,
+              "ndcg@10": 0.803638353825393
+            },
+            "reranked": {
+              "precision@10": 0.15,
+              "recall@10": 0.7777777777777778,
+              "mrr": 0.9583333333333334,
+              "map": 0.7245629370629371,
+              "ndcg@10": 0.7810460553887975
+            }
+          },
+          "per_query": [
+            {
+              "query": "What is the purpose of reranking in RAG?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@10": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@10": 0.2,
+                  "recall@10": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.375,
+                  "ndcg@10": 0.5802792108518124
+                },
+                "fused": {
+                  "precision@10": 0.2,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@10": 0.7903864795495061
+                },
+                "reranked": {
+                  "precision@10": 0.2,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.6666666666666666,
+                  "ndcg@10": 0.8315546295836225
+                }
+              }
+            },
+            {
+              "query": "How does hybrid search combine dense and sparse retrieval?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.3,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.8095238095238094,
+                  "ndcg@10": 0.9217868789962071
+                },
+                "keyword": {
+                  "precision@10": 0.3,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.7777777777777778,
+                  "ndcg@10": 0.9066276098484507
+                },
+                "fused": {
+                  "precision@10": 0.3,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.8333333333333334,
+                  "ndcg@10": 0.9325210919548239
+                },
+                "reranked": {
+                  "precision@10": 0.2,
+                  "recall@10": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.7435897435897436,
+                  "ndcg@10": 0.7653606369886217
+                }
+              }
+            },
+            {
+              "query": "What is the purpose of splitting documents into chunks?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "keyword": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@10": 0.6309297535714575
+                }
+              }
+            },
+            {
+              "query": "What is the difference between training and inference?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "keyword": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why split data into training, validation, and test sets?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@10": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@10": 0.2,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@10": 0.7903864795495061
+                },
+                "fused": {
+                  "precision@10": 0.2,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.7,
+                  "ndcg@10": 0.8503449055347546
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5909090909090909,
+                  "ndcg@10": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What is the difference between precision and recall?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "keyword": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@10": 0.6309297535714575
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why can deep learning perform well on images and text?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 0.14285714285714285,
+                  "map": 0.14285714285714285,
+                  "ndcg@10": 0.20438239758848611
+                },
+                "keyword": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5666666666666667,
+                  "ndcg@10": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 0.3333333333333333,
+                  "map": 0.25757575757575757,
+                  "ndcg@10": 0.3065735963827292
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5769230769230769,
+                  "ndcg@10": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What does an embedding represent?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "keyword": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                }
+              }
+            },
+            {
+              "query": "Does RAG eliminate hallucinations?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.3,
+                  "recall@10": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.65,
+                  "ndcg@10": 0.787702056960637
+                },
+                "keyword": {
+                  "precision@10": 0.3,
+                  "recall@10": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.8166666666666667,
+                  "ndcg@10": 0.8318724637288826
+                },
+                "fused": {
+                  "precision@10": 0.3,
+                  "recall@10": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.6604166666666667,
+                  "ndcg@10": 0.7598336331031966
+                },
+                "reranked": {
+                  "precision@10": 0.4,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.8166666666666667,
+                  "ndcg@10": 0.9267582364714125
+                }
+              }
+            },
+            {
+              "query": "When should RAG be chosen over fine-tuning?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 0.5,
+                  "map": 0.25,
+                  "ndcg@10": 0.38685280723454163
+                },
+                "keyword": {
+                  "precision@10": 0.2,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@10": 0.7903864795495061
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5588235294117647,
+                  "ndcg@10": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.55,
+                  "ndcg@10": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "How would you debug a RAG system with incorrect answers?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@10": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5625,
+                  "ndcg@10": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@10": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@10": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What is the difference between ML, DL, and RAG?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.2,
+                  "recall@10": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.4666666666666666,
+                  "ndcg@10": 0.617319681505689
+                },
+                "keyword": {
+                  "precision@10": 0.3,
+                  "recall@10": 1.0,
+                  "mrr": 0.25,
+                  "map": 0.3055555555555555,
+                  "ndcg@10": 0.5105347743265789
+                },
+                "fused": {
+                  "precision@10": 0.3,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.5555555555555555,
+                  "ndcg@10": 0.7777061538487877
+                },
+                "reranked": {
+                  "precision@10": 0.2,
+                  "recall@10": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.75,
+                  "ndcg@10": 0.7653606369886217
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "boundary_aware": {
+      "project": "RAGX",
+      "strategy": "boundary_aware",
+      "experiment_timestamp": "2026-10-04T17:42:23.715392+05:30",
+      "dataset_path": "C:\\00_Main_ALL_CODE\\ragx\\experiments\\chunking_comparison\\boundary_aware\\ground_truth.jsonl",
+      "vector_store_path": "C:\\00_Main_ALL_CODE\\ragx\\experiments\\chunking_comparison\\indexes\\boundary_aware\\vector_store",
+      "bm25_index_path": "C:\\00_Main_ALL_CODE\\ragx\\experiments\\chunking_comparison\\indexes\\boundary_aware\\bm25_index",
+      "index_size": 54,
+      "queries_evaluated": 12,
+      "candidate_k": 20,
+      "reranker_enabled": true,
+      "runs": [
+        {
+          "k": 1,
+          "queries_evaluated": 12,
+          "candidate_k": 20,
+          "average_metrics": {
+            "dense": {
+              "precision@1": 0.8333333333333334,
+              "recall@1": 0.5347222222222222,
+              "mrr": 0.873015873015873,
+              "map": 0.6500220458553791,
+              "ndcg@1": 0.8333333333333334
+            },
+            "keyword": {
+              "precision@1": 0.75,
+              "recall@1": 0.46527777777777773,
+              "mrr": 0.8541666666666666,
+              "map": 0.6785626750700281,
+              "ndcg@1": 0.75
+            },
+            "fused": {
+              "precision@1": 0.8333333333333334,
+              "recall@1": 0.5347222222222222,
+              "mrr": 0.9027777777777778,
+              "map": 0.6960847794181128,
+              "ndcg@1": 0.8333333333333334
+            },
+            "reranked": {
+              "precision@1": 0.9166666666666666,
+              "recall@1": 0.5347222222222222,
+              "mrr": 0.9583333333333334,
+              "map": 0.7084355459355459,
+              "ndcg@1": 0.9166666666666666
+            }
+          },
+          "per_query": [
+            {
+              "query": "What is the purpose of reranking in RAG?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5666666666666667,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.5,
+                  "map": 0.3611111111111111,
+                  "ndcg@1": 0.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6111111111111112,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6666666666666666,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "How does hybrid search combine dense and sparse retrieval?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.7666666666666666,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.7777777777777778,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.7916666666666666,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.75,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "What is the purpose of splitting documents into chunks?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@1": 0.0
+                }
+              }
+            },
+            {
+              "query": "What is the difference between training and inference?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why split data into training, validation, and test sets?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6666666666666666,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5909090909090909,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "What is the difference between precision and recall?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@1": 0.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why can deep learning perform well on images and text?",
+              "stages": {
+                "dense": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.14285714285714285,
+                  "map": 0.12142857142857143,
+                  "ndcg@1": 0.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5666666666666667,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.3333333333333333,
+                  "map": 0.25757575757575757,
+                  "ndcg@1": 0.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "What does an embedding represent?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "Does RAG eliminate hallucinations?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.25,
+                  "mrr": 1.0,
+                  "map": 0.65,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.25,
+                  "mrr": 1.0,
+                  "map": 0.8214285714285714,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.25,
+                  "mrr": 1.0,
+                  "map": 0.6916666666666667,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.25,
+                  "mrr": 1.0,
+                  "map": 0.7611111111111111,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "When should RAG be chosen over fine-tuning?",
+              "stages": {
+                "dense": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.3333333333333333,
+                  "map": 0.16666666666666666,
+                  "ndcg@1": 0.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.7,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.5,
+                  "map": 0.3269230769230769,
+                  "ndcg@1": 0.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6111111111111112,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "How would you debug a RAG system with incorrect answers?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5588235294117647,
+                  "ndcg@1": 1.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@1": 1.0
+                }
+              }
+            },
+            {
+              "query": "What is the difference between ML, DL, and RAG?",
+              "stages": {
+                "dense": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.45740740740740743,
+                  "ndcg@1": 1.0
+                },
+                "keyword": {
+                  "precision@1": 0.0,
+                  "recall@1": 0.0,
+                  "mrr": 0.25,
+                  "map": 0.2569444444444444,
+                  "ndcg@1": 0.0
+                },
+                "fused": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.5074074074074074,
+                  "ndcg@1": 1.0
+                },
+                "reranked": {
+                  "precision@1": 1.0,
+                  "recall@1": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.5499999999999999,
+                  "ndcg@1": 1.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "k": 3,
+          "queries_evaluated": 12,
+          "candidate_k": 20,
+          "average_metrics": {
+            "dense": {
+              "precision@3": 0.3611111111111111,
+              "recall@3": 0.625,
+              "mrr": 0.873015873015873,
+              "map": 0.6500220458553791,
+              "ndcg@3": 0.6788345978899253
+            },
+            "keyword": {
+              "precision@3": 0.38888888888888884,
+              "recall@3": 0.6597222222222222,
+              "mrr": 0.8541666666666666,
+              "map": 0.6785626750700281,
+              "ndcg@3": 0.6863109974047045
+            },
+            "fused": {
+              "precision@3": 0.38888888888888884,
+              "recall@3": 0.6666666666666666,
+              "mrr": 0.9027777777777778,
+              "map": 0.6960847794181128,
+              "ndcg@3": 0.711072331826137
+            },
+            "reranked": {
+              "precision@3": 0.38888888888888884,
+              "recall@3": 0.6666666666666666,
+              "mrr": 0.9583333333333334,
+              "map": 0.7084355459355459,
+              "ndcg@3": 0.7247221431165625
+            }
+          },
+          "per_query": [
+            {
+              "query": "What is the purpose of reranking in RAG?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5666666666666667,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 0.5,
+                  "map": 0.3611111111111111,
+                  "ndcg@3": 0.38685280723454163
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6111111111111112,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6666666666666666,
+                  "ndcg@3": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "How does hybrid search combine dense and sparse retrieval?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.7666666666666666,
+                  "ndcg@3": 0.7653606369886217
+                },
+                "keyword": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.7777777777777778,
+                  "ndcg@3": 0.7653606369886217
+                },
+                "fused": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.7916666666666666,
+                  "ndcg@3": 0.7653606369886217
+                },
+                "reranked": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.75,
+                  "ndcg@3": 0.7653606369886217
+                }
+              }
+            },
+            {
+              "query": "What is the purpose of splitting documents into chunks?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@3": 0.6309297535714575
+                }
+              }
+            },
+            {
+              "query": "What is the difference between training and inference?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why split data into training, validation, and test sets?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6666666666666666,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5909090909090909,
+                  "ndcg@3": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What is the difference between precision and recall?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@3": 0.6309297535714575
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why can deep learning perform well on images and text?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.0,
+                  "recall@3": 0.0,
+                  "mrr": 0.14285714285714285,
+                  "map": 0.12142857142857143,
+                  "ndcg@3": 0.0
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5666666666666667,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 0.3333333333333333,
+                  "map": 0.25757575757575757,
+                  "ndcg@3": 0.3065735963827292
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@3": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What does an embedding represent?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@3": 1.0
+                }
+              }
+            },
+            {
+              "query": "Does RAG eliminate hallucinations?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.65,
+                  "ndcg@3": 0.7653606369886217
+                },
+                "keyword": {
+                  "precision@3": 1.0,
+                  "recall@3": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.8214285714285714,
+                  "ndcg@3": 1.0
+                },
+                "fused": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6916666666666667,
+                  "ndcg@3": 0.7653606369886217
+                },
+                "reranked": {
+                  "precision@3": 0.6666666666666666,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.7611111111111111,
+                  "ndcg@3": 0.7653606369886217
+                }
+              }
+            },
+            {
+              "query": "When should RAG be chosen over fine-tuning?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 0.3333333333333333,
+                  "map": 0.16666666666666666,
+                  "ndcg@3": 0.3065735963827292
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.7,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 0.5,
+                  "map": 0.3269230769230769,
+                  "ndcg@3": 0.38685280723454163
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6111111111111112,
+                  "ndcg@3": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "How would you debug a RAG system with incorrect answers?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5588235294117647,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@3": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@3": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What is the difference between ML, DL, and RAG?",
+              "stages": {
+                "dense": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.45740740740740743,
+                  "ndcg@3": 0.46927872602275644
+                },
+                "keyword": {
+                  "precision@3": 0.0,
+                  "recall@3": 0.0,
+                  "mrr": 0.25,
+                  "map": 0.2569444444444444,
+                  "ndcg@3": 0.0
+                },
+                "fused": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.5074074074074074,
+                  "ndcg@3": 0.46927872602275644
+                },
+                "reranked": {
+                  "precision@3": 0.3333333333333333,
+                  "recall@3": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.5499999999999999,
+                  "ndcg@3": 0.46927872602275644
+                }
+              }
+            }
+          ]
+        },
+        {
+          "k": 5,
+          "queries_evaluated": 12,
+          "candidate_k": 20,
+          "average_metrics": {
+            "dense": {
+              "precision@5": 0.23333333333333336,
+              "recall@5": 0.6458333333333334,
+              "mrr": 0.873015873015873,
+              "map": 0.6500220458553791,
+              "ndcg@5": 0.6806963828875933
+            },
+            "keyword": {
+              "precision@5": 0.26666666666666666,
+              "recall@5": 0.7291666666666666,
+              "mrr": 0.8541666666666666,
+              "map": 0.6785626750700281,
+              "ndcg@5": 0.7089091243212651
+            },
+            "fused": {
+              "precision@5": 0.23333333333333336,
+              "recall@5": 0.6666666666666666,
+              "mrr": 0.9027777777777778,
+              "map": 0.6960847794181128,
+              "ndcg@5": 0.7003491486381547
+            },
+            "reranked": {
+              "precision@5": 0.26666666666666666,
+              "recall@5": 0.7152777777777778,
+              "mrr": 0.9583333333333334,
+              "map": 0.7084355459355459,
+              "ndcg@5": 0.7417124108256764
+            }
+          },
+          "per_query": [
+            {
+              "query": "What is the purpose of reranking in RAG?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5666666666666667,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 0.5,
+                  "map": 0.3611111111111111,
+                  "ndcg@5": 0.38685280723454163
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6111111111111112,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6666666666666666,
+                  "ndcg@5": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "How does hybrid search combine dense and sparse retrieval?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.4,
+                  "recall@5": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.7666666666666666,
+                  "ndcg@5": 0.7653606369886217
+                },
+                "keyword": {
+                  "precision@5": 0.4,
+                  "recall@5": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.7777777777777778,
+                  "ndcg@5": 0.7653606369886217
+                },
+                "fused": {
+                  "precision@5": 0.4,
+                  "recall@5": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.7916666666666666,
+                  "ndcg@5": 0.7653606369886217
+                },
+                "reranked": {
+                  "precision@5": 0.4,
+                  "recall@5": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.75,
+                  "ndcg@5": 0.7653606369886217
+                }
+              }
+            },
+            {
+              "query": "What is the purpose of splitting documents into chunks?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@5": 0.6309297535714575
+                }
+              }
+            },
+            {
+              "query": "What is the difference between training and inference?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why split data into training, validation, and test sets?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6666666666666666,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5909090909090909,
+                  "ndcg@5": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What is the difference between precision and recall?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@5": 0.6309297535714575
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why can deep learning perform well on images and text?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.0,
+                  "recall@5": 0.0,
+                  "mrr": 0.14285714285714285,
+                  "map": 0.12142857142857143,
+                  "ndcg@5": 0.0
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5666666666666667,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 0.3333333333333333,
+                  "map": 0.25757575757575757,
+                  "ndcg@5": 0.3065735963827292
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@5": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What does an embedding represent?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@5": 1.0
+                }
+              }
+            },
+            {
+              "query": "Does RAG eliminate hallucinations?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.6,
+                  "recall@5": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.65,
+                  "ndcg@5": 0.787702056960637
+                },
+                "keyword": {
+                  "precision@5": 0.6,
+                  "recall@5": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.8214285714285714,
+                  "ndcg@5": 0.8318724637288826
+                },
+                "fused": {
+                  "precision@5": 0.4,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6916666666666667,
+                  "ndcg@5": 0.6366824387328317
+                },
+                "reranked": {
+                  "precision@5": 0.6,
+                  "recall@5": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.7611111111111111,
+                  "ndcg@5": 0.787702056960637
+                }
+              }
+            },
+            {
+              "query": "When should RAG be chosen over fine-tuning?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 0.3333333333333333,
+                  "map": 0.16666666666666666,
+                  "ndcg@5": 0.3065735963827292
+                },
+                "keyword": {
+                  "precision@5": 0.4,
+                  "recall@5": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.7,
+                  "ndcg@5": 0.8503449055347546
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 0.5,
+                  "map": 0.3269230769230769,
+                  "ndcg@5": 0.38685280723454163
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.6111111111111112,
+                  "ndcg@5": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "How would you debug a RAG system with incorrect answers?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5588235294117647,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@5": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@5": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What is the difference between ML, DL, and RAG?",
+              "stages": {
+                "dense": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.45740740740740743,
+                  "ndcg@5": 0.46927872602275644
+                },
+                "keyword": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.3333333333333333,
+                  "mrr": 0.25,
+                  "map": 0.2569444444444444,
+                  "ndcg@5": 0.20210734650054757
+                },
+                "fused": {
+                  "precision@5": 0.2,
+                  "recall@5": 0.3333333333333333,
+                  "mrr": 1.0,
+                  "map": 0.5074074074074074,
+                  "ndcg@5": 0.46927872602275644
+                },
+                "reranked": {
+                  "precision@5": 0.4,
+                  "recall@5": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.5499999999999999,
+                  "ndcg@5": 0.6508205185601091
+                }
+              }
+            }
+          ]
+        },
+        {
+          "k": 10,
+          "queries_evaluated": 12,
+          "candidate_k": 20,
+          "average_metrics": {
+            "dense": {
+              "precision@10": 0.14166666666666666,
+              "recall@10": 0.7430555555555555,
+              "mrr": 0.873015873015873,
+              "map": 0.6500220458553791,
+              "ndcg@10": 0.7208048282109902
+            },
+            "keyword": {
+              "precision@10": 0.16666666666666666,
+              "recall@10": 0.8680555555555555,
+              "mrr": 0.8541666666666666,
+              "map": 0.6785626750700281,
+              "ndcg@10": 0.7647626586037357
+            },
+            "fused": {
+              "precision@10": 0.16666666666666666,
+              "recall@10": 0.8541666666666666,
+              "mrr": 0.9027777777777778,
+              "map": 0.6960847794181128,
+              "ndcg@10": 0.7809324165451311
+            },
+            "reranked": {
+              "precision@10": 0.15833333333333335,
+              "recall@10": 0.8194444444444445,
+              "mrr": 0.9583333333333334,
+              "map": 0.7084355459355459,
+              "ndcg@10": 0.7850873473551897
+            }
+          },
+          "per_query": [
+            {
+              "query": "What is the purpose of reranking in RAG?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5666666666666667,
+                  "ndcg@10": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@10": 0.2,
+                  "recall@10": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.3611111111111111,
+                  "ndcg@10": 0.5714285040141098
+                },
+                "fused": {
+                  "precision@10": 0.2,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.6111111111111112,
+                  "ndcg@10": 0.7977228895450266
+                },
+                "reranked": {
+                  "precision@10": 0.2,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.6666666666666666,
+                  "ndcg@10": 0.8315546295836225
+                }
+              }
+            },
+            {
+              "query": "How does hybrid search combine dense and sparse retrieval?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.3,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.7666666666666666,
+                  "ndcg@10": 0.9010126104210695
+                },
+                "keyword": {
+                  "precision@10": 0.3,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.7777777777777778,
+                  "ndcg@10": 0.9066276098484507
+                },
+                "fused": {
+                  "precision@10": 0.3,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.7916666666666666,
+                  "ndcg@10": 0.9134015924715543
+                },
+                "reranked": {
+                  "precision@10": 0.2,
+                  "recall@10": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.75,
+                  "ndcg@10": 0.7653606369886217
+                }
+              }
+            },
+            {
+              "query": "What is the purpose of splitting documents into chunks?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "keyword": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@10": 0.6309297535714575
+                }
+              }
+            },
+            {
+              "query": "What is the difference between training and inference?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "keyword": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why split data into training, validation, and test sets?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@10": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@10": 0.2,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.6,
+                  "ndcg@10": 0.7903864795495061
+                },
+                "fused": {
+                  "precision@10": 0.2,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.6666666666666666,
+                  "ndcg@10": 0.8315546295836225
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5909090909090909,
+                  "ndcg@10": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What is the difference between precision and recall?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "keyword": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 0.5,
+                  "map": 0.5,
+                  "ndcg@10": 0.6309297535714575
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                }
+              }
+            },
+            {
+              "query": "Why can deep learning perform well on images and text?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 0.14285714285714285,
+                  "map": 0.12142857142857143,
+                  "ndcg@10": 0.20438239758848611
+                },
+                "keyword": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5666666666666667,
+                  "ndcg@10": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 0.3333333333333333,
+                  "map": 0.25757575757575757,
+                  "ndcg@10": 0.3065735963827292
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5714285714285714,
+                  "ndcg@10": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What does an embedding represent?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "keyword": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 1.0,
+                  "ndcg@10": 1.0
+                }
+              }
+            },
+            {
+              "query": "Does RAG eliminate hallucinations?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.3,
+                  "recall@10": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.65,
+                  "ndcg@10": 0.787702056960637
+                },
+                "keyword": {
+                  "precision@10": 0.3,
+                  "recall@10": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.8214285714285714,
+                  "ndcg@10": 0.8318724637288826
+                },
+                "fused": {
+                  "precision@10": 0.3,
+                  "recall@10": 0.75,
+                  "mrr": 1.0,
+                  "map": 0.6916666666666667,
+                  "ndcg@10": 0.7757386182436072
+                },
+                "reranked": {
+                  "precision@10": 0.4,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.7611111111111111,
+                  "ndcg@10": 0.9052181617170639
+                }
+              }
+            },
+            {
+              "query": "When should RAG be chosen over fine-tuning?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 0.3333333333333333,
+                  "map": 0.16666666666666666,
+                  "ndcg@10": 0.3065735963827292
+                },
+                "keyword": {
+                  "precision@10": 0.2,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.7,
+                  "ndcg@10": 0.8503449055347546
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 0.5,
+                  "map": 0.3269230769230769,
+                  "ndcg@10": 0.38685280723454163
+                },
+                "reranked": {
+                  "precision@10": 0.2,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.6111111111111112,
+                  "ndcg@10": 0.7977228895450266
+                }
+              }
+            },
+            {
+              "query": "How would you debug a RAG system with incorrect answers?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@10": 0.6131471927654584
+                },
+                "keyword": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5588235294117647,
+                  "ndcg@10": 0.6131471927654584
+                },
+                "fused": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@10": 0.6131471927654584
+                },
+                "reranked": {
+                  "precision@10": 0.1,
+                  "recall@10": 0.5,
+                  "mrr": 1.0,
+                  "map": 0.5,
+                  "ndcg@10": 0.6131471927654584
+                }
+              }
+            },
+            {
+              "query": "What is the difference between ML, DL, and RAG?",
+              "stages": {
+                "dense": {
+                  "precision@10": 0.2,
+                  "recall@10": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.45740740740740743,
+                  "ndcg@10": 0.6105456988825855
+                },
+                "keyword": {
+                  "precision@10": 0.2,
+                  "recall@10": 0.6666666666666666,
+                  "mrr": 0.25,
+                  "map": 0.2569444444444444,
+                  "ndcg@10": 0.36926780146674987
+                },
+                "fused": {
+                  "precision@10": 0.3,
+                  "recall@10": 1.0,
+                  "mrr": 1.0,
+                  "map": 0.5074074074074074,
+                  "ndcg@10": 0.7461976723150332
+                },
+                "reranked": {
+                  "precision@10": 0.2,
+                  "recall@10": 0.6666666666666666,
+                  "mrr": 1.0,
+                  "map": 0.5499999999999999,
+                  "ndcg@10": 0.6508205185601091
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

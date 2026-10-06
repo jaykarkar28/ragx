@@ -1,0 +1,269 @@
+[
+  {
+    "query": "What is the purpose of reranking in RAG?",
+    "relevant_docs": [
+      "28",
+      "46"
+    ],
+    "evidence_diagnostics": [
+      {
+        "page": 4,
+        "evidence": "A reranker then scores query–passage pairs more precisely and reorders candidates.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "28"
+        ]
+      },
+      {
+        "page": 6,
+        "evidence": "To score and reorder retrieved candidates more accurately for a particular query before generation.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "46"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How does hybrid search combine dense and sparse retrieval?",
+    "relevant_docs": [
+      "27",
+      "45",
+      "46"
+    ],
+    "evidence_diagnostics": [
+      {
+        "page": 4,
+        "evidence": "Hybrid retrieval combines both to capture semantic similarity and exact keyword matches.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "27"
+        ]
+      },
+      {
+        "page": 6,
+        "evidence": "Dense retrieval captures semantic similarity, while sparse retrieval is often strong for exact terms, identifiers, and rare keywords.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "45",
+          "46"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "What is the purpose of splitting documents into chunks?",
+    "relevant_docs": [
+      "25"
+    ],
+    "evidence_diagnostics": [
+      {
+        "page": 4,
+        "evidence": "Long documents are split into smaller passages called chunks. Chunk size and overlap affect what information is retrieved and how much context is sent to the model.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "25"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "What is the difference between training and inference?",
+    "relevant_docs": [
+      "43"
+    ],
+    "evidence_diagnostics": [
+      {
+        "page": 6,
+        "evidence": "Training adjusts model parameters using data; inference uses the resulting model to make predictions.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "43"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Why split data into training, validation, and test sets?",
+    "relevant_docs": [
+      "43",
+      "44"
+    ],
+    "evidence_diagnostics": [
+      {
+        "page": 6,
+        "evidence": "Training fits the model, validation supports model selection and tuning, and the test set provides a final estimate on unseen data.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "43",
+          "44"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "What is the difference between precision and recall?",
+    "relevant_docs": [
+      "44"
+    ],
+    "evidence_diagnostics": [
+      {
+        "page": 6,
+        "evidence": "Precision measures how many predicted positives are correct; recall measures how many actual positives were found.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "44"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Why can deep learning perform well on images and text?",
+    "relevant_docs": [
+      "44",
+      "45"
+    ],
+    "evidence_diagnostics": [
+      {
+        "page": 6,
+        "evidence": "Neural networks can learn layered representations from high-dimensional, unstructured inputs, often benefiting from large datasets and compute.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "44",
+          "45"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "What does an embedding represent?",
+    "relevant_docs": [
+      "45"
+    ],
+    "evidence_diagnostics": [
+      {
+        "page": 6,
+        "evidence": "A vector representation intended to place semantically related items near each other in a learned vector space.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "45"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Does RAG eliminate hallucinations?",
+    "relevant_docs": [
+      "23",
+      "24",
+      "46",
+      "47"
+    ],
+    "evidence_diagnostics": [
+      {
+        "page": 3,
+        "evidence": "Reduce some hallucinations, though retrieval and generation errors can still occur.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "23",
+          "24"
+        ]
+      },
+      {
+        "page": 6,
+        "evidence": "No. It can improve grounding, but retrieval gaps, conflicting evidence, prompt issues, and model errors can still produce unsupported claims.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "46",
+          "47"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "When should RAG be chosen over fine-tuning?",
+    "relevant_docs": [
+      "47",
+      "52"
+    ],
+    "evidence_diagnostics": [
+      {
+        "page": 6,
+        "evidence": "When the system needs to answer from a changing or private knowledge source and should retrieve evidence at query time.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "47"
+        ]
+      },
+      {
+        "page": 7,
+        "evidence": "Knowledge-intensive answers over changing or private content",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "52"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How would you debug a RAG system with incorrect answers?",
+    "relevant_docs": [
+      "47",
+      "48"
+    ],
+    "evidence_diagnostics": [
+      {
+        "page": 6,
+        "evidence": "Inspect the source data and chunks, test retrieval relevance and recall, review reranking and context assembly, then check the prompt, model output, and evaluation examples.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "47",
+          "48"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "What is the difference between ML, DL, and RAG?",
+    "relevant_docs": [
+      "40",
+      "41",
+      "53"
+    ],
+    "evidence_diagnostics": [
+      {
+        "page": 5,
+        "evidence": "ML is the broad discipline of learning patterns from data. DL is a family of ML methods based on multilayer neural networks. RAG is an application architecture that combines retrieval with generation; it often uses deep-learning models for embeddings and language generation, but RAG itself is not a model-training algorithm.",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "40",
+          "41"
+        ]
+      },
+      {
+        "page": 7,
+        "evidence": "Methods that learn patterns from data",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "53"
+        ]
+      },
+      {
+        "page": 7,
+        "evidence": "ML using multilayer neural networks",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "53"
+        ]
+      },
+      {
+        "page": 7,
+        "evidence": "Retrieval + LLM generation architecture",
+        "found_in_source": true,
+        "matched_chunk_ids": [
+          "53"
+        ]
+      }
+    ]
+  }
+]

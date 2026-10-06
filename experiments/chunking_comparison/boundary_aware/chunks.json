@@ -1,0 +1,704 @@
+[
+  {
+    "id": "0",
+    "text": "ML DL RAG | 1\nMachine Learning, Deep Learning & RAG\nConcepts, workflows, key terminology, examples, and practical comparisons\n1. Machine Learning (ML)\nMachine Learning is a branch of artificial intelligence in which a system learns patterns from data and uses those\npatterns to make predictions, classifications, recommendations, or decisions. Instead of writing every rule manually,\nwe provide examples and an algorithm learns a model from them.\n1.1 Core terminology",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 1,
+      "chunk_index": 0,
+      "char_start": 0,
+      "char_end": 467
+    }
+  },
+  {
+    "id": "1",
+    "text": "rule manually,\nwe provide examples and an algorithm learns a model from them.\n1.1 Core terminology\nDataset: The collection of examples used to build and evaluate a model.\nFeature: An input variable used by the model, such as age, income, or pixel values.\nLabel / target: The value the model is expected to predict.\nModel: The learned mathematical relationship between inputs and outputs.\nTraining: The process of fitting model parameters using data.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 1,
+      "chunk_index": 1,
+      "char_start": 369,
+      "char_end": 818
+    }
+  },
+  {
+    "id": "2",
+    "text": "relationship between inputs and outputs.\nTraining: The process of fitting model parameters using data.\nInference: Using a trained model to make predictions on new inputs.\nLoss function: A measure of how far predictions are from the desired answers.\nHyperparameter: A configuration chosen before or around training, such as tree depth or learning rate.\nGeneralization: How well a model performs on new, unseen data.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 1,
+      "chunk_index": 2,
+      "char_start": 716,
+      "char_end": 1130
+    }
+  },
+  {
+    "id": "3",
+    "text": "such as tree depth or learning rate.\nGeneralization: How well a model performs on new, unseen data.\n\n1.2 Main types of machine learning\nSupervised learning\nThe training data contains input examples and their correct labels. The model learns to map inputs to outputs.\nClassification predicts a category: spam vs. not spam, fraud vs. legitimate.\nRegression predicts a numerical value: house price, delivery time, or demand.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 1,
+      "chunk_index": 3,
+      "char_start": 1031,
+      "char_end": 1452
+    }
+  },
+  {
+    "id": "4",
+    "text": "fraud vs. legitimate.\nRegression predicts a numerical value: house price, delivery time, or demand.\nCommon algorithms: linear regression, logistic regression, decision trees, random forests, support vector machines\n(SVM), k-nearest neighbors (KNN), and gradient-boosted trees.\nUnsupervised learning\nThe data has no explicit target labels. The goal is to discover structure or useful representations.\nClustering groups similar records, for example customer segments (K-means, DBSCAN).",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 1,
+      "chunk_index": 4,
+      "char_start": 1353,
+      "char_end": 1836
+    }
+  },
+  {
+    "id": "5",
+    "text": "representations.\nClustering groups similar records, for example customer segments (K-means, DBSCAN).\nDimensionality reduction compresses or summarizes features (PCA, UMAP).\nAnomaly detection identifies unusual patterns, such as suspicious transactions.\nSemi-supervised and self-supervised learning\nSemi-supervised learning combines a small amount of labeled data with a larger amount of unlabeled data.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 1,
+      "chunk_index": 5,
+      "char_start": 1736,
+      "char_end": 2138
+    }
+  },
+  {
+    "id": "6",
+    "text": "Semi-supervised learning combines a small amount of labeled data with a larger amount of unlabeled data.\nSelf-supervised learning creates training targets from the data itself, such as predicting masked words or parts of an\nimage. These approaches are important when labeling is expensive.\n1.3 Typical ML workflow\n– Define the problem and success metric.\n– Collect data and inspect its quality, distribution, and possible bias.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 1,
+      "chunk_index": 6,
+      "char_start": 2034,
+      "char_end": 2461
+    }
+  },
+  {
+    "id": "7",
+    "text": "problem and success metric.\n– Collect data and inspect its quality, distribution, and possible bias.\n– Clean and preprocess data; encode categorical values and handle missing values where appropriate.\n– Split data into training, validation, and test sets. Keep the test set isolated until final evaluation.\n– Build a simple baseline before trying more complex algorithms.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 1,
+      "chunk_index": 7,
+      "char_start": 2361,
+      "char_end": 2732
+    }
+  },
+  {
+    "id": "8",
+    "text": "ML DL RAG | 2\n– Train models and tune hyperparameters using validation data or cross-validation.\n– Evaluate with metrics suited to the task.\n– Deploy the selected model, monitor performance and data drift, and retrain when needed.\n\n1.4 Evaluation metrics\nClassification: accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrix.\nRegression: MAE, MSE, RMSE, and R-squared.\nImbalanced data: accuracy can be misleading; inspect precision, recall, F1, PR-AUC, and class-specific errors.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 2,
+      "chunk_index": 0,
+      "char_start": 0,
+      "char_end": 494
+    }
+  },
+  {
+    "id": "9",
+    "text": "data: accuracy can be misleading; inspect precision, recall, F1, PR-AUC, and class-specific errors.\nCross-validation: repeated train/validation splits used to estimate performance more robustly.\n\n1.5 Overfitting, underfitting, and regularization\nOverfitting occurs when a model learns noise or details specific to the training data and performs poorly on unseen\ndata. Underfitting occurs when the model is too simple or insufficiently trained to capture useful patterns.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 2,
+      "chunk_index": 1,
+      "char_start": 395,
+      "char_end": 865
+    }
+  },
+  {
+    "id": "10",
+    "text": "Underfitting occurs when the model is too simple or insufficiently trained to capture useful patterns.\nRegularization methods—such as limiting tree depth, L1/L2 penalties, dropout in neural networks, or early\nstopping—can help control overfitting. The bias–variance trade-off describes the balance between overly simple\nassumptions and sensitivity to the training sample.\nExample: Email spam classification",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 2,
+      "chunk_index": 2,
+      "char_start": 763,
+      "char_end": 1169
+    }
+  },
+  {
+    "id": "11",
+    "text": "overly simple\nassumptions and sensitivity to the training sample.\nExample: Email spam classification\nEach email is represented using features such as word patterns, sender information, and message metadata. A\nsupervised classifier is trained on emails labeled “spam” or “not spam.” At inference time, it predicts a class or\nprobability for a new email. Precision matters when incorrectly blocking legitimate email is costly; recall matters when\nmissing spam is costly.\n2. Deep Learning (DL)",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 2,
+      "chunk_index": 3,
+      "char_start": 1069,
+      "char_end": 1559
+    }
+  },
+  {
+    "id": "12",
+    "text": "blocking legitimate email is costly; recall matters when\nmissing spam is costly.\n2. Deep Learning (DL)\nDeep Learning is a subfield of machine learning that uses neural networks with multiple layers to learn increasingly\nuseful representations from data. It is especially effective for complex, high-dimensional inputs such as images, audio,\ntext, and video, although it can also be used for tabular data.\n2.1 Neural network fundamentals",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 2,
+      "chunk_index": 4,
+      "char_start": 1457,
+      "char_end": 1893
+    }
+  },
+  {
+    "id": "13",
+    "text": "audio,\ntext, and video, although it can also be used for tabular data.\n2.1 Neural network fundamentals\nNeuron: Computes a weighted combination of inputs plus a bias, then applies an activation function.\nLayer: A group of computational units. Common structures include input, hidden, and output layers.\nWeights and biases: Trainable parameters adjusted during learning.\nActivation function: Adds non-linearity. Examples include ReLU, sigmoid, and tanh.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 2,
+      "chunk_index": 5,
+      "char_start": 1791,
+      "char_end": 2242
+    }
+  },
+  {
+    "id": "14",
+    "text": "during learning.\nActivation function: Adds non-linearity. Examples include ReLU, sigmoid, and tanh.\nForward pass: Computes a prediction from the current parameters.\nBackpropagation: Calculates how the loss changes with respect to model parameters.\nOptimizer: Updates parameters to reduce loss, for example SGD or Adam.\nEpoch: One full pass through the training dataset; a batch is a smaller subset processed together.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 2,
+      "chunk_index": 6,
+      "char_start": 2143,
+      "char_end": 2560
+    }
+  },
+  {
+    "id": "15",
+    "text": "Epoch: One full pass through the training dataset; a batch is a smaller subset processed together.\nA simplified training loop is: forward pass → calculate loss → backpropagate gradients → optimizer update. This\nrepeats over batches and epochs.\n2.2 Important neural-network architectures\nConvolutional Neural Networks (CNNs)\nCNNs use convolutional filters to detect local patterns and build spatial features. They are commonly used in image",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 2,
+      "chunk_index": 7,
+      "char_start": 2462,
+      "char_end": 2901
+    }
+  },
+  {
+    "id": "16",
+    "text": "convolutional filters to detect local patterns and build spatial features. They are commonly used in image\nclassification, object detection, and medical or industrial image analysis.\nRecurrent Neural Networks (RNNs), LSTM, and GRU",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 2,
+      "chunk_index": 8,
+      "char_start": 2795,
+      "char_end": 3025
+    }
+  },
+  {
+    "id": "17",
+    "text": "ML DL RAG | 3\nThese architectures process sequences while maintaining information from earlier steps. LSTM and GRU units help\npreserve useful information over longer sequences than basic RNNs. They have been used for time series, speech,\nand language tasks.\nTransformers\nTransformers use attention mechanisms to model relationships among tokens or other input elements. Self-attention\nlets each position use information from other positions. Transformers are the foundation of many modern language",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 3,
+      "chunk_index": 0,
+      "char_start": 0,
+      "char_end": 497
+    }
+  },
+  {
+    "id": "18",
+    "text": "position use information from other positions. Transformers are the foundation of many modern language\nmodels and are also widely used in vision, audio, and multimodal systems.\nAutoencoders and generative models\nAutoencoders learn to encode data into a compact representation and reconstruct it. Variational autoencoders and\ndiffusion models are examples of generative approaches that learn data distributions and can generate new samples.\n2.3 Training concepts",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 3,
+      "chunk_index": 1,
+      "char_start": 395,
+      "char_end": 856
+    }
+  },
+  {
+    "id": "19",
+    "text": "generative approaches that learn data distributions and can generate new samples.\n2.3 Training concepts\nLearning rate: Controls the size of parameter updates. Too high can destabilize training; too low can make learning\nslow.\nBatch size: Number of examples processed before an optimizer update.\nGradient descent: Uses gradients of the loss to update model parameters.\nVanishing/exploding gradients: Gradients can become extremely small or large, making training difficult.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 3,
+      "chunk_index": 2,
+      "char_start": 753,
+      "char_end": 1225
+    }
+  },
+  {
+    "id": "20",
+    "text": "Vanishing/exploding gradients: Gradients can become extremely small or large, making training difficult.\nTransfer learning: Reuses a pretrained model and adapts it to a new task.\nFine-tuning: Further trains a pretrained model on task-specific data.\nData augmentation: Creates varied training examples, such as image flips or text perturbations, to improve\nrobustness.\n2.4 ML vs. DL\nDeep learning is not separate from machine learning: it is one family of ML methods. The best choice depends on the",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 3,
+      "chunk_index": 3,
+      "char_start": 1121,
+      "char_end": 1618
+    }
+  },
+  {
+    "id": "21",
+    "text": "not separate from machine learning: it is one family of ML methods. The best choice depends on the\ndata, constraints, evaluation requirements, and maintenance cost.\n3. Retrieval-Augmented Generation (RAG)\nRetrieval-Augmented Generation is a system design pattern that combines information retrieval with a generative\nlanguage model. Before answering, the system retrieves relevant information from a knowledge source and provides",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 3,
+      "chunk_index": 4,
+      "char_start": 1520,
+      "char_end": 1949
+    }
+  },
+  {
+    "id": "22",
+    "text": "model. Before answering, the system retrieves relevant information from a knowledge source and provides\nthat information as context to the model. RAG is useful when answers should be grounded in private, domain-specific,\nor frequently updated content.\n3.1 Why use RAG?\nGround answers in supplied documents rather than relying only on model parameters.\nMake private or organization-specific knowledge available without retraining the base model.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 3,
+      "chunk_index": 5,
+      "char_start": 1846,
+      "char_end": 2290
+    }
+  },
+  {
+    "id": "23",
+    "text": "parameters.\nMake private or organization-specific knowledge available without retraining the base model.\nUpdate the knowledge collection by re-ingesting or re-indexing content.\nProvide source references or retrieved passages to support verification.\nReduce some hallucinations, though retrieval and generation errors can still occur.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 3,
+      "chunk_index": 6,
+      "char_start": 2186,
+      "char_end": 2519
+    }
+  },
+  {
+    "id": "24",
+    "text": "verification.\nReduce some hallucinations, though retrieval and generation errors can still occur.\n\n3.2 Main RAG components\nIngestion and preprocessing\nDocuments may come from PDFs, web pages, databases, text files, or other sources. Ingestion extracts text and\nmetadata. Preprocessing may remove noise, normalize content, preserve headings, and handle tables or document\nstructure.\nChunking",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 3,
+      "chunk_index": 7,
+      "char_start": 2422,
+      "char_end": 2812
+    }
+  },
+  {
+    "id": "25",
+    "text": "ML DL RAG | 4\nLong documents are split into smaller passages called chunks. Chunk size and overlap affect what information is\nretrieved and how much context is sent to the model. Very small chunks may lose context; very large chunks can dilute\nrelevance and consume context-window space.\nEmbeddings and indexing\nAn embedding model maps text into a numerical vector intended to represent semantic meaning. Vectors are stored in",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 4,
+      "chunk_index": 0,
+      "char_start": 0,
+      "char_end": 426
+    }
+  },
+  {
+    "id": "26",
+    "text": "model maps text into a numerical vector intended to represent semantic meaning. Vectors are stored in\nan index or vector database, often alongside the original text and metadata. Similarity search retrieves vectors close to\nthe query vector. Common similarity measures include cosine similarity, dot product, and Euclidean distance.\nRetrieval\nThe user query is embedded or otherwise processed, then used to retrieve candidate chunks. Dense retrieval uses",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 4,
+      "chunk_index": 1,
+      "char_start": 325,
+      "char_end": 779
+    }
+  },
+  {
+    "id": "27",
+    "text": "query is embedded or otherwise processed, then used to retrieve candidate chunks. Dense retrieval uses\nembeddings; sparse retrieval uses lexical signals such as term matching (for example BM25). Hybrid retrieval\ncombines both to capture semantic similarity and exact keyword matches.\nFusion and reranking\nWhen multiple retrievers return results, a fusion method can combine their rankings. Reciprocal Rank Fusion (RRF) is",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 4,
+      "chunk_index": 2,
+      "char_start": 677,
+      "char_end": 1098
+    }
+  },
+  {
+    "id": "28",
+    "text": "retrievers return results, a fusion method can combine their rankings. Reciprocal Rank Fusion (RRF) is\none common rank-based approach. A reranker then scores query–passage pairs more precisely and reorders\ncandidates. Reranking can improve relevance but adds latency and compute cost.\nPrompt construction and generation\nThe selected passages are assembled into a prompt with the user question and instructions. The language model",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 4,
+      "chunk_index": 3,
+      "char_start": 996,
+      "char_end": 1425
+    }
+  },
+  {
+    "id": "29",
+    "text": "selected passages are assembled into a prompt with the user question and instructions. The language model\ngenerates an answer using the provided context. Good prompts tell the model to distinguish supported facts from\nmissing information and to cite sources when required.\n3.3 Typical RAG pipeline\n– Prepare documents: load, parse, clean, and preserve useful metadata.\n– Split content into chunks using a strategy suited to the document type.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 4,
+      "chunk_index": 4,
+      "char_start": 1320,
+      "char_end": 1762
+    }
+  },
+  {
+    "id": "30",
+    "text": "preserve useful metadata.\n– Split content into chunks using a strategy suited to the document type.\n– Create embeddings for chunks and store vectors, text, and metadata in an index.\n– Receive a user query and optionally rewrite or expand it.\n– Retrieve candidate passages using dense, sparse, or hybrid search.\n– Fuse results and optionally rerank them.\n– Build a context-aware prompt and call the language model.\n– Return the answer with relevant source information.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 4,
+      "chunk_index": 5,
+      "char_start": 1663,
+      "char_end": 2130
+    }
+  },
+  {
+    "id": "31",
+    "text": "context-aware prompt and call the language model.\n– Return the answer with relevant source information.\n– Evaluate retrieval and answer quality; monitor latency, cost, and failure cases.\n\n3.4 RAG terminology\nTop-k: Number of retrieved results selected for the next stage.\nContext window: Maximum input/output token capacity supported by a model.\nQuery rewriting: Reformulates a question to improve retrieval.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 4,
+      "chunk_index": 6,
+      "char_start": 2027,
+      "char_end": 2435
+    }
+  },
+  {
+    "id": "32",
+    "text": "token capacity supported by a model.\nQuery rewriting: Reformulates a question to improve retrieval.\nMetadata filtering: Restricts retrieval by attributes such as date, document type, or access group.\nGroundedness: How well generated claims are supported by the retrieved context.\nFaithfulness: Whether the answer accurately reflects the evidence provided.\nRecall@k: Fraction of relevant items found among the top k retrieved results.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 4,
+      "chunk_index": 7,
+      "char_start": 2336,
+      "char_end": 2769
+    }
+  },
+  {
+    "id": "33",
+    "text": "the evidence provided.\nRecall@k: Fraction of relevant items found among the top k retrieved results.\nMRR / nDCG: Ranking metrics that reward relevant results appearing near the top.\nCitation accuracy: Whether cited sources actually support the associated claims.\n\n3.5 Common RAG approaches\nBasic or Naive RAG: A straightforward retrieve-then-generate pipeline.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 4,
+      "chunk_index": 8,
+      "char_start": 2669,
+      "char_end": 3029
+    }
+  },
+  {
+    "id": "34",
+    "text": "ML DL RAG | 5\nAdvanced RAG: Adds improvements such as query rewriting, hybrid retrieval, metadata filters, reranking, and better\nchunking.\nCorrective RAG: Evaluates retrieval quality and may take corrective actions when retrieved evidence is weak.\nAdaptive RAG: Chooses retrieval strategies or whether to retrieve based on the query and system state.\nAgentic RAG: Uses an agent or workflow to plan searches, call tools, retrieve iteratively, and decide when enough\nevidence has been collected.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 5,
+      "chunk_index": 0,
+      "char_start": 0,
+      "char_end": 493
+    }
+  },
+  {
+    "id": "35",
+    "text": "plan searches, call tools, retrieve iteratively, and decide when enough\nevidence has been collected.\n3.6 RAG vs. fine-tuning\nRAG and fine-tuning solve different problems and can complement each other. Fine-tuning is not a reliable substitute\nfor a searchable, updateable knowledge base when precise, current facts are required.\n3.7 RAG evaluation and common failure modes\nEvaluate the retrieval and generation stages separately as well as end to end. A fluent answer can still be wrong if the",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 5,
+      "chunk_index": 1,
+      "char_start": 393,
+      "char_end": 885
+    }
+  },
+  {
+    "id": "36",
+    "text": "retrieval and generation stages separately as well as end to end. A fluent answer can still be wrong if the\nretriever found irrelevant evidence, and excellent retrieval can still be wasted by poor prompt construction or\ngeneration.\nRetrieval quality: Recall@k, Precision@k, MRR, nDCG, and relevance judgments.\nAnswer quality: correctness, completeness, relevance, groundedness, faithfulness, and citation quality.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 5,
+      "chunk_index": 2,
+      "char_start": 778,
+      "char_end": 1191
+    }
+  },
+  {
+    "id": "37",
+    "text": "Answer quality: correctness, completeness, relevance, groundedness, faithfulness, and citation quality.\nOperational quality: latency, throughput, token usage, cost, availability, and access-control correctness.\nBad chunking: Important context is split apart or chunks contain too much unrelated material.\nRetrieval misses: Relevant passages are not indexed, are poorly embedded, or rank too low.\nContext noise: Too many weak passages distract the model.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 5,
+      "chunk_index": 3,
+      "char_start": 1088,
+      "char_end": 1541
+    }
+  },
+  {
+    "id": "38",
+    "text": "indexed, are poorly embedded, or rank too low.\nContext noise: Too many weak passages distract the model.\nUnsupported answers: The model makes claims not supported by the retrieved evidence.\nStale or conflicting sources: The knowledge base contains outdated or contradictory content.\nSecurity risks: Retrieved documents may contain prompt-injection text; treat document content as data, enforce\npermissions, and do not let retrieved instructions override system policy.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 5,
+      "chunk_index": 4,
+      "char_start": 1437,
+      "char_end": 1905
+    }
+  },
+  {
+    "id": "39",
+    "text": "content as data, enforce\npermissions, and do not let retrieved instructions override system policy.\nExample: Company policy assistant\nAn employee asks, “How many days of parental leave are available?” The system searches the company policy index,\nretrieves the relevant policy section, and supplies it to the language model. The answer should summarize the\nretrieved policy and point to the source. If no relevant policy passage is found, the assistant should say it cannot verify",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 5,
+      "chunk_index": 5,
+      "char_start": 1806,
+      "char_end": 2286
+    }
+  },
+  {
+    "id": "40",
+    "text": "point to the source. If no relevant policy passage is found, the assistant should say it cannot verify\nthe answer rather than inventing a number.\n4. How ML, DL, and RAG fit together\nML is the broad discipline of learning patterns from data. DL is a family of ML methods based on multilayer neural\nnetworks. RAG is an application architecture that combines retrieval with generation; it often uses deep-learning",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 5,
+      "chunk_index": 6,
+      "char_start": 2184,
+      "char_end": 2594
+    }
+  },
+  {
+    "id": "41",
+    "text": "is an application architecture that combines retrieval with generation; it often uses deep-learning\nmodels for embeddings and language generation, but RAG itself is not a model-training algorithm.\nAn ML classifier can predict whether a support ticket is urgent.\nA deep-learning model can extract meaning from text or images, or generate a response.\nA RAG system can retrieve the latest support documentation and use an LLM to answer a question grounded in\nthose documents.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 5,
+      "chunk_index": 7,
+      "char_start": 2495,
+      "char_end": 2967
+    }
+  },
+  {
+    "id": "42",
+    "text": "retrieve the latest support documentation and use an LLM to answer a question grounded in\nthose documents.\nA production application may combine all three: ML for routing, DL for language understanding, and RAG for\nknowledge-grounded answers.\n5. Quick comparison\n6. Interview and revision questions",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 5,
+      "chunk_index": 8,
+      "char_start": 2861,
+      "char_end": 3158
+    }
+  },
+  {
+    "id": "43",
+    "text": "ML DL RAG | 6\nWhat is the difference between training and inference?\nTraining adjusts model parameters using data; inference uses the resulting model to make predictions.\nWhy split data into train, validation, and test sets?\nTraining fits the model, validation supports model selection and tuning, and the test set provides a final estimate on\nunseen data.\nWhat is the difference between precision and recall?",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 6,
+      "chunk_index": 0,
+      "char_start": 0,
+      "char_end": 409
+    }
+  },
+  {
+    "id": "44",
+    "text": "set provides a final estimate on\nunseen data.\nWhat is the difference between precision and recall?\nPrecision measures how many predicted positives are correct; recall measures how many actual positives were found.\nWhy can deep learning perform well on images and text?\nNeural networks can learn layered representations from high-dimensional, unstructured inputs, often benefiting from\nlarge datasets and compute.\nWhat does an embedding represent?",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 6,
+      "chunk_index": 1,
+      "char_start": 311,
+      "char_end": 757
+    }
+  },
+  {
+    "id": "45",
+    "text": "unstructured inputs, often benefiting from\nlarge datasets and compute.\nWhat does an embedding represent?\nA vector representation intended to place semantically related items near each other in a learned vector space.\nWhy use hybrid search in RAG?\nDense retrieval captures semantic similarity, while sparse retrieval is often strong for exact terms, identifiers, and rare\nkeywords.\nWhat is the purpose of reranking?",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 6,
+      "chunk_index": 2,
+      "char_start": 653,
+      "char_end": 1067
+    }
+  },
+  {
+    "id": "46",
+    "text": "is often strong for exact terms, identifiers, and rare\nkeywords.\nWhat is the purpose of reranking?\nTo score and reorder retrieved candidates more accurately for a particular query before generation.\nDoes RAG eliminate hallucinations?\nNo. It can improve grounding, but retrieval gaps, conflicting evidence, prompt issues, and model errors can still\nproduce unsupported claims.\nWhen would you choose RAG over fine-tuning?",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 6,
+      "chunk_index": 3,
+      "char_start": 969,
+      "char_end": 1388
+    }
+  },
+  {
+    "id": "47",
+    "text": "and model errors can still\nproduce unsupported claims.\nWhen would you choose RAG over fine-tuning?\nWhen the system needs to answer from a changing or private knowledge source and should retrieve evidence at query\ntime.\nHow would you debug a RAG system with incorrect answers?\nInspect the source data and chunks, test retrieval relevance and recall, review reranking and context assembly, then\ncheck the prompt, model output, and evaluation examples.\n7. Suggested learning order",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 6,
+      "chunk_index": 4,
+      "char_start": 1290,
+      "char_end": 1767
+    }
+  },
+  {
+    "id": "48",
+    "text": "assembly, then\ncheck the prompt, model output, and evaluation examples.\n7. Suggested learning order\n– Start with ML foundations: datasets, features, supervised learning, metrics, overfitting, and validation.\n– Implement a few classical models with scikit-learn and learn to inspect errors rather than relying only on scores.\n– Study neural-network fundamentals, backpropagation, optimizers, and CNNs/Transformers at a conceptual level.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 6,
+      "chunk_index": 5,
+      "char_start": 1668,
+      "char_end": 2103
+    }
+  },
+  {
+    "id": "49",
+    "text": "neural-network fundamentals, backpropagation, optimizers, and CNNs/Transformers at a conceptual level.\n– Build a small deep-learning project using a framework such as PyTorch.\n– Learn embeddings, vector similarity, sparse search, chunking, and indexing.\n– Build a basic RAG application, then add hybrid retrieval, reranking, citations, and evaluation.\n– Measure quality and latency, inspect failure cases, and document trade-offs.",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 6,
+      "chunk_index": 6,
+      "char_start": 2001,
+      "char_end": 2431
+    }
+  },
+  {
+    "id": "50",
+    "text": "citations, and evaluation.\n– Measure quality and latency, inspect failure cases, and document trade-offs.\n\nAspect\nTraditional ML\nDeep Learning\nFeature engineering\nOften relies more on manually\ndesigned features\nCan learn useful features\nautomatically\nData needs\nCan work well with smaller datasets,\ndepending on task\nOften benefits from large datasets",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 6,
+      "chunk_index": 7,
+      "char_start": 2326,
+      "char_end": 2677
+    }
+  },
+  {
+    "id": "51",
+    "text": "ML DL RAG | 7\nAspect\nTraditional ML\nDeep Learning\nCompute\nMany methods train efficiently on\nCPUs\nOften requires substantial compute;\nGPUs can help\nInterpretability\nSome models are relatively\ninterpretable\nComplex networks can be harder to\ninterpret\nTypical strengths\nStructured/tabular prediction and\nsmaller-data tasks\nImages, audio, language, and\ncomplex representations\nQuestion\nRAG\nFine-tuning\nPrimary purpose\nSupply external knowledge at\ninference time\nAdapt model behavior or learned task",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 7,
+      "chunk_index": 0,
+      "char_start": 0,
+      "char_end": 494
+    }
+  },
+  {
+    "id": "52",
+    "text": "Fine-tuning\nPrimary purpose\nSupply external knowledge at\ninference time\nAdapt model behavior or learned task\npatterns\nUpdating facts\nUpdate the indexed knowledge\nsource\nMay require another training run\nSource traceability\nCan expose retrieved passages and\ncitations\nDoes not inherently provide source\ncitations\nBest fit\nKnowledge-intensive answers over\nchanging or private content\nStyle, format, task behavior, or\ndomain adaptation\nCan they be combined?\nYes\nYes\nTopic\nWhat it is\nLearns/trains?",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 7,
+      "chunk_index": 1,
+      "char_start": 386,
+      "char_end": 879
+    }
+  },
+  {
+    "id": "53",
+    "text": "format, task behavior, or\ndomain adaptation\nCan they be combined?\nYes\nYes\nTopic\nWhat it is\nLearns/trains?\nTypical use\nML\nMethods that learn\npatterns from data\nUsually trains a predictive\nmodel\nPrediction, classification,\nclustering\nDL\nML using multilayer neural\nnetworks\nTrains neural-network\nparameters\nVision, language, speech,\ncomplex data\nRAG\nRetrieval + LLM generation\narchitecture\nUsually indexes content;\nmay use pretrained models\nwithout fine-tuning\nGrounded Q&A over\ndocuments and knowledge\nbases",
+    "metadata": {
+      "source": "C:\\00_Main_ALL_CODE\\ragx\\datasets\\documents\\demo_sample.pdf",
+      "filename": "demo_sample.pdf",
+      "file_type": "pdf",
+      "page": 7,
+      "chunk_index": 2,
+      "char_start": 774,
+      "char_end": 1279
+    }
+  }
+]

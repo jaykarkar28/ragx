@@ -1,0 +1,39 @@
+# Environment
+.venv/
+.env
+__pycache__/
+*.py[cod]
+
+# Local data and indexes
+data/
+datasets/documents/*
+!datasets/documents/.gitkeep
+
+# Experiments
+experiments/reports/*
+!experiments/reports/.gitkeep
+
+# Model caches
+.cache/
+models/
+
+# Test and lint
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE
+.idea/
+.vscode/
+
+reranking_diagnostic.txt
+
+
+# Generated experiment indexes and artifacts
+experiments/vector_store/
+experiments/vector_store_test/
+experiments/bm25_index/
+experiments/bm25_test/
+experiments/all_chunks.json
+experiments/chunking_comparison/indexes/

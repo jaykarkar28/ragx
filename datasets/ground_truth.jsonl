@@ -1,0 +1,12 @@
+{"query": "What is the purpose of reranking in RAG?", "relevant_docs": ["28", "46"]}
+{"query": "How does hybrid search combine dense and sparse retrieval?", "relevant_docs": ["27", "45"]}
+{"query": "What is the purpose of splitting documents into chunks?", "relevant_docs": ["25"]}
+{"query": "What is the difference between training and inference?", "relevant_docs": ["43"]}
+{"query": "Why split data into training, validation, and test sets?", "relevant_docs": ["43"]}
+{"query": "What is the difference between precision and recall?", "relevant_docs": ["44"]}
+{"query": "Why can deep learning perform well on images and text?", "relevant_docs": ["44"]}
+{"query": "What does an embedding represent?", "relevant_docs": ["45"]}
+{"query": "Does RAG eliminate hallucinations?", "relevant_docs": ["23", "46"]}
+{"query": "When should RAG be chosen over fine-tuning?", "relevant_docs": ["47", "52"]}
+{"query": "How would you debug a RAG system with incorrect answers?", "relevant_docs": ["47"]}
+{"query": "What is the difference between ML, DL, and RAG?", "relevant_docs": ["40", "41", "53"]}

@@ -1,0 +1,5 @@
+{"query":"What is the purpose of reranking in RAG?","expected_behavior":"answer","reference_answer":"Reranking scores and reorders retrieved candidates more accurately for a particular query before generation."}
+{"query":"Does RAG completely eliminate hallucinations?","expected_behavior":"answer","reference_answer":"No. RAG can reduce some hallucinations through grounding, but it does not eliminate them."}
+{"query":"What is the capital of France?","expected_behavior":"refuse","reference_answer":"The retrieved context does not contain enough information to answer this question."}
+{"query":"What is the purpose of splitting documents into chunks?","expected_behavior":"answer","reference_answer":"Documents are split into smaller chunks so relevant information can be retrieved and appropriate context can be provided to the model."}
+{"query":"What is the relationship between RAG and quantum computing?","expected_behavior":"refuse","reference_answer":"The retrieved context does not contain enough information to answer this question."}
